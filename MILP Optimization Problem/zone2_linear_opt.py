@@ -33,7 +33,7 @@ T = range(1, 25)
 # Test Network Data
 #basic_data = pd.read_csv('Emunsing_Data/basic_data.csv',header=None)#, columns=['f','t','r','x'])
 fields = ['Node A','Node B','R','X']
-basic_data = pd.read_csv(r'A:\NREL\NREL\Control of AES\Optimization Models\123Feeder_data\Line_Data.csv',usecols=fields) # Change your file path
+basic_data = pd.read_csv(r'Path to file\Line_Data.csv',usecols=fields) # Change your file path
 basic_data.columns = ['f','t','r','x']
 
 cutNode = len(basic_data) # include the whole network
@@ -59,7 +59,7 @@ nl = np.int64(len(t))    # Number of lines
 no_of_nodes = range(1, nb+1)
 
 # Price of electricity from the grid (if we want grid-connected)
-LMP_price = np.array(pd.read_csv(r'A:\NREL\NREL\Control of AES\Optimization Models\123Feeder_data\EnergyPrice.csv',header=None))
+LMP_price = np.array(pd.read_csv(r'Path to file\EnergyPrice.csv',header=None))
 price = LMP_price / np.max(LMP_price) # Scale to [0,1]
 
 ## Hourly Load data
@@ -68,7 +68,7 @@ data_col = ['Load (kW)']
 # Number of Houses on each node
 noh = 8
 
-load_data = pd.read_csv(r'A:\NREL\NREL\Control of AES\Optimization Models\123Feeder_data\Load_Data_Hourly.csv',usecols=data_col)
+load_data = pd.read_csv(r'Path to file\Load_Data_Hourly.csv',usecols=data_col)
 load_data = noh * np.array(load_data['Load (kW)'].iloc[:Time]) # Considering 7 houses at each node
 fixed_load_p = np.vstack((np.zeros((1,Time)),np.full((nl,Time), load_data)))/s_base
 fixed_load_q = np.vstack((np.zeros((1,Time)),noh*(100 + (200-1002)*np.random.rand(nl,Time))))/(s_base*1e3)
@@ -81,7 +81,7 @@ fixed_load_q = 0.3 * fixed_load_q + 0.7 * np.dot(np.asmatrix(np.mean(fixed_load_
 ## Hourly PV Data
 # Solar data - NSRDB 2017 database, evaluated in SAM for PV Panel - SunPower SPR-X21-335
 PV_data_col = ['PV (kW)']
-p_sol = pd.read_csv(r'A:\NREL\NREL\Control of AES\Optimization Models\123Feeder_data\PV_hourly_data.csv',usecols=PV_data_col) # Just take solar output (not hours)
+p_sol = pd.read_csv(r'Path to file\PV_hourly_data.csv',usecols=PV_data_col) # Just take solar output (not hours)
 p_sol = noh * np.array(p_sol['PV (kW)'].iloc[:Time]) # Considering 7 houses at each node
 p_sol = np.vstack((np.zeros((1,Time)),np.full((nl,Time), p_sol)))# Stack for each node
 ##
