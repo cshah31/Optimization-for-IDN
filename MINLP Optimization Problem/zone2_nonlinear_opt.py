@@ -30,7 +30,7 @@ z_base = (v_base**2)/s_base
 T = range(1, 25)
 
 # Test Network Data
-#basic_data = pd.read_csv('Emunsing_Data/basic_data.csv',header=None)#, columns=['f','t','r','x'])
+#basic_data = pd.read_csv('r'Path to file/basic_data.csv',header=None)#, columns=['f','t','r','x'])
 fields = ['Node A','Node B','R','X']
 basic_data = pd.read_csv(r'Path to file\Line_Data.csv',usecols=fields) # Change your file path
 basic_data.columns = ['f','t','r','x']
