@@ -18,6 +18,7 @@ The battery energy storage system is characterized by its rated power, rated ene
 
 
 References:
+
 [1] S. H. Low, “Convex Relaxation of Optimal Power Flow – Part I: Formulation and Equivalence”, IEEE Transactions on Control of Network Systems, vol.1, no. 1, pp. 15-27, Mar. 2014.
 
 [2] Y. Levron, J. M. Guerrero, and Y. Beck, “Optimal Power Flow in Microgrids with Energy Storage”, IEEE Transactions on Power Systems, vol. 28, no. 3, pp. 3226-3234, Aug. 2013.
