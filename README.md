@@ -17,7 +17,7 @@ The battery energy storage system is characterized by its rated power, rated ene
 
 References:
 [1] S. H. Low, “Convex Relaxation of Optimal Power Flow – Part I: Formulation and Equivalence”, IEEE Transactions on Control of Network Systems, vol.1, no. 1, pp. 15-27, Mar. 2014.
-[2] Y. Levron, J. M. Guerrero, and Y. Beck, “Optimal Power Flow in Microgrids with Energy Storage”, IEEE Transactions on Power Systems, vol. 28, no. 3, pp. 3226-3234, Aug. 2013.
+/n[2] Y. Levron, J. M. Guerrero, and Y. Beck, “Optimal Power Flow in Microgrids with Energy Storage”, IEEE Transactions on Power Systems, vol. 28, no. 3, pp. 3226-3234, Aug. 2013.
 [3] M. Sufyan, C. Tan, N. A. Rahim, S. R. S. Raihan, and M. A. Muhammad, “Dynamic Economic Dispatch of Isolated Microgrid with Energy Storage using MIQP”, in 2018 IEEE International Conference on Intelligent and Advanced System, Aug 2018.
 [4] C. Wang, L. Fang, L. Pan, Y. Wang, “Optimal Dispatch of an Island MG Including a Multiple Energy Storage System”, in 2018 2nd IEEE Conference on Energy Internet and Energy System Integration.
 [5] E. Munsing, J. Mather, and S. Moura, “Blockchains for Decentralized Optimization of Energy Resources in Microgrid Networks”, in 2017 IEEE Conference on Control Technology and Applications (CCTA).
