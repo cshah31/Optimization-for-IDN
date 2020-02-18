@@ -1,4 +1,4 @@
-This reserach work is the part of the application RAFTES (Resilient ans Fault Tolerant Energy System), developed at University of Alaska fairbanks and Alaska Center for Energy and Power. This application will be integrated with an open source advanced distribution management system platform GridAPPS-D (https://gridapps-d.org) developed by Pacific Northwest National Laboratory.
+This reserach work is the part of the application RAFTES (Resilient ans Fault Tolerant Energy System), developed at University of Alaska fairbanks and Alaska Center for Energy and Power (http://acep.uaf.edu). This application will be integrated with an open source advanced distribution management system platform GridAPPS-D (https://gridapps-d.org) developed by Pacific Northwest National Laboratory.
 
 # Optimization-for-Isolated Distribution Network Integaretd with Battery Energy Storage System.
 
